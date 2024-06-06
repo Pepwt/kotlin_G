@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".MainActivity"
+              android:padding="16dp">
+
+    <!-- Titulo -->
+    <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blue Wave CETESB"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:layout_marginBottom="16dp"/>
+
+    <!-- Nome da Praia -->
+    <EditText
+            android:id="@+id/etNomePraia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome da Praia"/>
+
+    <!-- Cidade -->
+    <EditText
+            android:id="@+id/etCidadePraia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cidade"/>
+
+    <!-- Estado -->
+    <EditText
+            android:id="@+id/etEstadoPraia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Estado"/>
+
+    <!-- Btn Incluir -->
+    <Button
+            android:id="@+id/btnAddPraia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_700"
+            android:text="Incluir"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp"/>
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerPraias"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="16dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+</LinearLayout>
